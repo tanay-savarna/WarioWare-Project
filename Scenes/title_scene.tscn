@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://tb45dp65yibo" path="res://images/Sky Blue Battle Royale Pattern.png" id="2_4nugt"]
 [ext_resource type="FontFile" uid="uid://v1x43spg70sb" path="res://Fonts/Burbank Big Condensed Black.ttf" id="3_3cm6q"]
 [ext_resource type="Texture2D" uid="uid://cvm25ipykm25q" path="res://images/image-removebg-preview (29).png" id="4_wpeey"]
+[ext_resource type="Texture2D" uid="uid://clgaxn80q6na0" path="res://images/Supply drop.png" id="5_wpeey"]
 
 [node name="TitleScreen" type="Node2D" unique_id=866870204]
 script = ExtResource("1_b6ftn")
@@ -16,12 +17,21 @@ offset_bottom = 1090.7283
 scale = Vector2(0.5978426, 0.5963023)
 texture = ExtResource("2_4nugt")
 
+[node name="Fishstick" type="TextureButton" parent="." unique_id=795376392]
+offset_left = -143.0
+offset_top = -5.000001
+offset_right = 523.0
+offset_bottom = 370.0
+rotation = 0.46486652
+scale = Vector2(1.3356476, 1.3847227)
+texture_normal = ExtResource("4_wpeey")
+
 [node name="Title" type="RichTextLabel" parent="." unique_id=797804246]
 clip_contents = false
-offset_left = 447.0
-offset_top = 98.0
-offset_right = 1122.0
-offset_bottom = 344.0
+offset_left = 331.0
+offset_top = 99.0
+offset_right = 1006.0
+offset_bottom = 345.0
 theme_override_colors/default_color = Color(1, 0.6392157, 0.38431373, 1)
 theme_override_constants/outline_size = 40
 theme_override_fonts/normal_font = ExtResource("3_3cm6q")
@@ -30,10 +40,10 @@ text = "Fortware!
 "
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=971147997]
-offset_left = 547.0
-offset_top = 289.0
-offset_right = 823.0
-offset_bottom = 459.0
+offset_left = 433.0
+offset_top = 288.99997
+offset_right = 709.0
+offset_bottom = 458.99997
 scale = Vector2(1.1386112, 1.2565668)
 
 [node name="Start" type="Button" parent="VBoxContainer" unique_id=1327766498]
@@ -61,14 +71,13 @@ theme_override_font_sizes/font_size = 28
 text = "Quit
 "
 
-[node name="Fishstick" type="TextureButton" parent="." unique_id=795376392]
-offset_left = 86.0
-offset_top = -35.999992
-offset_right = 752.0
-offset_bottom = 339.0
-rotation = 0.8369552
-scale = Vector2(1.3356476, 1.3847227)
-texture_normal = ExtResource("4_wpeey")
+[node name="Supply drop" type="TextureRect" parent="." unique_id=697617155]
+offset_left = 898.0
+offset_top = -43.0
+offset_right = 1336.0391
+offset_bottom = 681.4242
+rotation = 0.19793731
+texture = ExtResource("5_wpeey")
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_settings_pressed"]
