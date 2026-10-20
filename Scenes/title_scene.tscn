@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://c5nw164py7ct6"]
 
 [ext_resource type="Script" uid="uid://dptrlod8hiubo" path="res://Scenes/title_scene.gd" id="1_b6ftn"]
-[ext_resource type="Texture2D" uid="uid://cikna1dim72r0" path="res://images/Cartoon Glider Over Llama Sky.png" id="2_b6ftn"]
+[ext_resource type="Texture2D" uid="uid://tb45dp65yibo" path="res://images/Sky Blue Battle Royale Pattern.png" id="2_4nugt"]
 [ext_resource type="FontFile" uid="uid://v1x43spg70sb" path="res://Fonts/Burbank Big Condensed Black.ttf" id="3_3cm6q"]
+[ext_resource type="Texture2D" uid="uid://cvm25ipykm25q" path="res://images/image-removebg-preview (29).png" id="4_wpeey"]
 
 [node name="TitleScreen" type="Node2D" unique_id=866870204]
 script = ExtResource("1_b6ftn")
@@ -13,7 +14,7 @@ offset_top = -1.0
 offset_right = 1929.6014
 offset_bottom = 1090.7283
 scale = Vector2(0.5978426, 0.5963023)
-texture = ExtResource("2_b6ftn")
+texture = ExtResource("2_4nugt")
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=797804246]
 clip_contents = false
@@ -59,6 +60,15 @@ theme_override_fonts/font = ExtResource("3_3cm6q")
 theme_override_font_sizes/font_size = 28
 text = "Quit
 "
+
+[node name="Fishstick" type="TextureButton" parent="." unique_id=795376392]
+offset_left = 86.0
+offset_top = -35.999992
+offset_right = 752.0
+offset_bottom = 339.0
+rotation = 0.8369552
+scale = Vector2(1.3356476, 1.3847227)
+texture_normal = ExtResource("4_wpeey")
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_settings_pressed"]

@@ -1,3 +1,53 @@
 [gd_scene format=3 uid="uid://d3inoq7haw825"]
 
-[node name="Node2D" type="Node2D" unique_id=581236405]
+[ext_resource type="Texture2D" uid="uid://tb45dp65yibo" path="res://images/Sky Blue Battle Royale Pattern.png" id="1_rol8n"]
+[ext_resource type="Texture2D" uid="uid://c6mr3kxesi56f" path="res://icon.svg" id="2_cn3xy"]
+[ext_resource type="FontFile" uid="uid://v1x43spg70sb" path="res://Fonts/Burbank Big Condensed Black.ttf" id="3_c7xwe"]
+
+[node name="Timer_Screen" type="Node2D" unique_id=581236405]
+
+[node name="Background" type="TextureRect" parent="." unique_id=1913738758]
+offset_right = 1672.0
+offset_bottom = 941.0
+scale = Vector2(0.6914074, 0.6894854)
+texture = ExtResource("1_rol8n")
+
+[node name="LlamaContainer" type="HBoxContainer" parent="Background" unique_id=772537158]
+layout_mode = 0
+offset_left = 227.07309
+offset_top = 94.27322
+offset_right = 883.07324
+offset_bottom = 222.27322
+scale = Vector2(1.8416326, 2.0844285)
+
+[node name="Llama" type="TextureRect" parent="Background/LlamaContainer" unique_id=1832910245]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Llama2" type="TextureRect" parent="Background/LlamaContainer" unique_id=790865447]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Llama3" type="TextureRect" parent="Background/LlamaContainer" unique_id=167660878]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Llama4" type="TextureRect" parent="Background/LlamaContainer" unique_id=1034229894]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Llama5" type="TextureRect" parent="Background/LlamaContainer" unique_id=1476581737]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=1446145205]
+offset_left = 391.0
+offset_top = 320.0
+offset_right = 772.0
+offset_bottom = 435.0
+theme_override_fonts/normal_font = ExtResource("3_c7xwe")
+theme_override_font_sizes/normal_font_size = 108
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1276781322]
+text = "0.0"
