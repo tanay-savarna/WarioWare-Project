@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://d3inoq7haw825"]
 
+[ext_resource type="Script" uid="uid://djlsg0ubub54v" path="res://Scenes/timer_screen.gd" id="1_b7jio"]
 [ext_resource type="Texture2D" uid="uid://d0v77y600o4pm" path="res://images/53882665-b437-4ecb-ba7b-0995fd1ee6a6.png" id="1_lymix"]
 [ext_resource type="Texture2D" uid="uid://blspuc02osujo" path="res://images/Supply_Llama_-_Container_-_Fortnite.webp" id="2_lymix"]
 [ext_resource type="FontFile" uid="uid://v1x43spg70sb" path="res://Fonts/Burbank Big Condensed Black.ttf" id="3_c7xwe"]
@@ -8,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://duqcpu28u5e3v" path="res://images/Battle Bus.png" id="6_66tft"]
 
 [node name="Timer_Screen" type="Node2D" unique_id=581236405]
+script = ExtResource("1_b7jio")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1913738758]
 offset_right = 1672.0
