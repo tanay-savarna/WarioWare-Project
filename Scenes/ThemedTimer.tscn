@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://doa0wtbc7l208"]
+
+[ext_resource type="Script" uid="uid://d2pwgqdbbyb31" path="res://Themed_Timer.gd" id="1_gxxo5"]
+[ext_resource type="FontFile" uid="uid://bm4pd4i5lgvfv" path="res://Fonts/Press_Start_2P/PressStart2P-Regular.ttf" id="2_58kmh"]
+
+[node name="ThemedTimer" type="Node2D" unique_id=963265899]
+script = ExtResource("1_gxxo5")
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=2000931379]
+offset_right = 132.62975
+offset_bottom = 53.720917
+scale = Vector2(2.4956694, 1.9545457)
+theme_override_colors/default_color = Color(0.0627451, 0.09411765, 0.1254902, 1)
+theme_override_fonts/normal_font = ExtResource("2_58kmh")
+theme_override_font_sizes/normal_font_size = 25
+text = "0.0
+"

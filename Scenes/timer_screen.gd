@@ -1,11 +1,11 @@
 extends Node2D
 
-@onready var Llama_container: HBoxContainer = $LlamaContainer
-@onready var Llama: TextureRect = $LlamaContainer/Llama
-@onready var Llama_2: TextureRect = $LlamaContainer/Llama2
-@onready var Llama_3: TextureRect = $LlamaContainer/Llama3
-@onready var Llama_4: TextureRect = $LlamaContainer/Llama4
-@onready var Llama_5: TextureRect = $LlamaContainer/Llama5
+@onready var Llama_container: HBoxContainer = $LlamaLlama
+@onready var Llama: TextureRect = $LlamaLlama/Llama
+@onready var Llama_2: TextureRect = $LlamaLlama/Llama2
+@onready var Llama_3: TextureRect = $LlamaLlama/Llama3
+@onready var Llama_4: TextureRect = $LlamaLlama/Llama4
+@onready var Llama_5: TextureRect = $LlamaLlama/Llama5
 @onready var level: RichTextLabel = $Level
 @onready var timer: RichTextLabel = $Timer
 
@@ -27,7 +27,7 @@ func _ready() -> void:
 		get_tree().change_scene_to_file("res://scenes/title_screen.tscn") # changes your scene
 	
 
-func _process(delta: float) -> void: # runs EVERY FRAME
+func _process(_delta: float) -> void: # runs EVERY FRAME
 	match Global.lives: # asks or checks if lives is equal to one of 
 #these values, cool hack. by the way this is a horrid way to illustrate the 
 #lives visually so later you can always find alternative code. Now, dw abt it.

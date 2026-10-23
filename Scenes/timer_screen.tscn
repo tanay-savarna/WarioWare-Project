@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://xaebkimegp2o"]
+
+[ext_resource type="Script" uid="uid://djlsg0ubub54v" path="res://Scenes/timer_screen.gd" id="1_cqi0v"]
+[ext_resource type="Texture2D" uid="uid://d0v77y600o4pm" path="res://images/53882665-b437-4ecb-ba7b-0995fd1ee6a6.png" id="2_cnaam"]
+[ext_resource type="Texture2D" uid="uid://blspuc02osujo" path="res://images/Supply_Llama_-_Container_-_Fortnite.webp" id="3_amle8"]
+[ext_resource type="FontFile" uid="uid://v1x43spg70sb" path="res://Fonts/Burbank Big Condensed Black.ttf" id="4_1wsqg"]
+[ext_resource type="Texture2D" uid="uid://be0oxeefvxt2e" path="res://images/Scar.png" id="5_ptl81"]
+[ext_resource type="Texture2D" uid="uid://cp5pxmdyjjylo" path="res://images/Hunting.png" id="6_wqk2m"]
+[ext_resource type="Texture2D" uid="uid://duqcpu28u5e3v" path="res://images/Battle Bus.png" id="7_u1qik"]
+
+[node name="Timer_Screen" type="Node2D" unique_id=581236405]
+script = ExtResource("1_cqi0v")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1913738758]
+offset_right = 1672.0
+offset_bottom = 941.0
+scale = Vector2(0.6914074, 0.6894854)
+texture = ExtResource("2_cnaam")
+
+[node name="LlamaLlama" type="HBoxContainer" parent="." unique_id=772537158]
+offset_left = 9.9999895
+offset_top = 34.99999
+offset_right = 2586.0
+offset_bottom = 547.0
+scale = Vector2(0.4382427, 0.47295517)
+
+[node name="Llama" type="TextureRect" parent="LlamaLlama" unique_id=1832910245]
+layout_mode = 2
+texture = ExtResource("3_amle8")
+
+[node name="Llama2" type="TextureRect" parent="LlamaLlama" unique_id=790865447]
+layout_mode = 2
+texture = ExtResource("3_amle8")
+
+[node name="Llama3" type="TextureRect" parent="LlamaLlama" unique_id=167660878]
+layout_mode = 2
+texture = ExtResource("3_amle8")
+
+[node name="Llama4" type="TextureRect" parent="LlamaLlama" unique_id=1034229894]
+layout_mode = 2
+texture = ExtResource("3_amle8")
+
+[node name="Llama5" type="TextureRect" parent="LlamaLlama" unique_id=1476581737]
+layout_mode = 2
+texture = ExtResource("3_amle8")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=1446145205]
+clip_contents = false
+offset_left = 423.0
+offset_top = 310.0
+offset_right = 872.0
+offset_bottom = 425.0
+theme_override_colors/default_color = Color(1, 0.5529412, 0.6313726, 1)
+theme_override_colors/font_outline_color = Color(0.19215687, 0.0627451, 0.23921569, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/normal_font = ExtResource("4_1wsqg")
+theme_override_font_sizes/normal_font_size = 108
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=406049955]
+clip_contents = false
+offset_left = 488.0
+offset_top = 454.0
+offset_right = 625.0
+offset_bottom = 569.0
+theme_override_colors/default_color = Color(1, 0.5529412, 0.6313726, 1)
+theme_override_colors/font_outline_color = Color(0.19075072, 0.062478982, 0.24062234, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/normal_font = ExtResource("4_1wsqg")
+theme_override_font_sizes/normal_font_size = 108
+text = "0.0"
+
+[node name="Scar" type="TextureRect" parent="." unique_id=1656228020]
+offset_left = -24.999977
+offset_top = 258.0
+offset_right = 443.72696
+offset_bottom = 766.0183
+rotation = 0.26470032
+texture = ExtResource("5_ptl81")
+
+[node name="Hunting Rifle" type="TextureRect" parent="." unique_id=489503011]
+offset_left = -300.99997
+offset_top = 552.0
+offset_right = 365.00003
+offset_bottom = 927.0
+rotation = -0.6304892
+texture = ExtResource("6_wqk2m")
+
+[node name="Battle Bus" type="TextureRect" parent="." unique_id=130238091]
+offset_left = 699.0
+offset_top = 130.00002
+offset_right = 1569.6416
+offset_bottom = 599.4678
+rotation = 0.38655645
+texture = ExtResource("7_u1qik")

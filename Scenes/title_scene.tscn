@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://dptrlod8hiubo" path="res://Scenes/title_scene.gd" id="1_b6ftn"]
 [ext_resource type="Texture2D" uid="uid://tb45dp65yibo" path="res://images/Sky Blue Battle Royale Pattern.png" id="2_4nugt"]
-[ext_resource type="FontFile" uid="uid://v1x43spg70sb" path="res://Fonts/Burbank Big Condensed Black.ttf" id="3_3cm6q"]
-[ext_resource type="Texture2D" uid="uid://cvm25ipykm25q" path="res://images/image-removebg-preview (29).png" id="4_wpeey"]
-[ext_resource type="Texture2D" uid="uid://clgaxn80q6na0" path="res://images/Supply drop.png" id="5_wpeey"]
+[ext_resource type="Texture2D" uid="uid://qim1dcquo274" path="res://images/newfish.png" id="3_wpeey"]
+[ext_resource type="FontFile" uid="uid://bm4pd4i5lgvfv" path="res://Fonts/Press_Start_2P/PressStart2P-Regular.ttf" id="4_d3ks1"]
+[ext_resource type="Texture2D" uid="uid://c1vwmfk0wi4n5" path="res://images/new drop.png" id="5_wpeey"]
 
 [node name="TitleScreen" type="Node2D" unique_id=866870204]
 script = ExtResource("1_b6ftn")
@@ -18,65 +18,70 @@ scale = Vector2(0.5978426, 0.5963023)
 texture = ExtResource("2_4nugt")
 
 [node name="Fishstick" type="TextureButton" parent="." unique_id=795376392]
-offset_left = -143.0
-offset_top = -5.000001
-offset_right = 523.0
-offset_bottom = 370.0
-rotation = 0.46486652
-scale = Vector2(1.3356476, 1.3847227)
-texture_normal = ExtResource("4_wpeey")
+offset_left = 8.999998
+offset_top = 73.0
+offset_right = 675.0
+offset_bottom = 448.0
+rotation = 0.32922018
+scale = Vector2(2.2409914, 1.6966925)
+texture_normal = ExtResource("3_wpeey")
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=797804246]
 clip_contents = false
-offset_left = 331.0
-offset_top = 99.0
-offset_right = 1006.0
-offset_bottom = 345.0
-theme_override_colors/default_color = Color(1, 0.6392157, 0.38431373, 1)
-theme_override_constants/outline_size = 40
-theme_override_fonts/normal_font = ExtResource("3_3cm6q")
-theme_override_font_sizes/normal_font_size = 150
+offset_left = 281.0
+offset_top = 194.0
+offset_right = 976.0
+offset_bottom = 292.0
+theme_override_colors/default_color = Color(1, 0.6666667, 0.39607844, 1)
+theme_override_colors/font_outline_color = Color(0.0627451, 0.09411765, 0.1254902, 1)
+theme_override_constants/outline_size = 35
+theme_override_fonts/normal_font = ExtResource("4_d3ks1")
+theme_override_font_sizes/normal_font_size = 75
 text = "Fortware!
 "
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=971147997]
-offset_left = 433.0
-offset_top = 288.99997
-offset_right = 709.0
-offset_bottom = 458.99997
-scale = Vector2(1.1386112, 1.2565668)
+offset_left = 435.0
+offset_top = 318.0
+offset_right = 764.34863
+offset_bottom = 472.38892
+scale = Vector2(1.0062308, 1.1482012)
 
 [node name="Start" type="Button" parent="VBoxContainer" unique_id=1327766498]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.6392157, 0.38431373, 1)
+theme_override_colors/font_color = Color(1, 0.6666667, 0.39607844, 1)
+theme_override_colors/font_outline_color = Color(0.0627451, 0.09411765, 0.1254902, 1)
 theme_override_constants/outline_size = 14
-theme_override_fonts/font = ExtResource("3_3cm6q")
-theme_override_font_sizes/font_size = 28
+theme_override_fonts/font = ExtResource("4_d3ks1")
+theme_override_font_sizes/font_size = 24
 text = "Start game"
 
 [node name="Settings" type="Button" parent="VBoxContainer" unique_id=1271958127]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.6392157, 0.38431373, 1)
+theme_override_colors/font_color = Color(1, 0.6666667, 0.39607844, 1)
+theme_override_colors/font_outline_color = Color(0.0627451, 0.09411765, 0.1254902, 1)
 theme_override_constants/outline_size = 14
-theme_override_fonts/font = ExtResource("3_3cm6q")
-theme_override_font_sizes/font_size = 28
+theme_override_fonts/font = ExtResource("4_d3ks1")
+theme_override_font_sizes/font_size = 24
 text = "Settings"
 
 [node name="Quit" type="Button" parent="VBoxContainer" unique_id=1801315897]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.6392157, 0.38431373, 1)
+theme_override_colors/font_color = Color(1, 0.6666667, 0.39607844, 1)
+theme_override_colors/font_outline_color = Color(0.0627451, 0.09411765, 0.1254902, 1)
 theme_override_constants/outline_size = 14
-theme_override_fonts/font = ExtResource("3_3cm6q")
-theme_override_font_sizes/font_size = 28
+theme_override_fonts/font = ExtResource("4_d3ks1")
+theme_override_font_sizes/font_size = 24
 text = "Quit
 "
 
 [node name="Supply drop" type="TextureRect" parent="." unique_id=697617155]
-offset_left = 898.0
-offset_top = -43.0
-offset_right = 1336.0391
-offset_bottom = 681.4242
+offset_left = 976.99994
+offset_top = -116.000015
+offset_right = 1415.0391
+offset_bottom = 608.4242
 rotation = 0.19793731
+scale = Vector2(0.8150781, 0.917701)
 texture = ExtResource("5_wpeey")
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]

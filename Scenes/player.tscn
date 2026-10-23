@@ -4,12 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://dri4g5wyc0g14" path="res://images/jonesy.png" id="2_6t5aa"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6nk6u"]
-radius = 74.24284
+radius = 21.023796
 
 [node name="Player" type="CharacterBody2D" unique_id=700901758]
 script = ExtResource("1_cvnsp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=266386224]
+scale = Vector2(0.3259641, 0.33057132)
 texture = ExtResource("2_6t5aa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1698038247]
