@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dfobcnq2mu2jg"]
+
+[ext_resource type="Texture2D" uid="uid://tb45dp65yibo" path="res://images/Sky Blue Battle Royale Pattern.png" id="1_enoba"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_673qo"]
+size = Vector2(1166, 73)
+
+[node name="minigame_1" type="Node2D" unique_id=530111391]
+
+[node name="Scrolling_Background" type="Parallax2D" parent="." unique_id=553483087]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="Scrolling_Background" unique_id=134303246]
+offset_right = 1672.0
+offset_bottom = 941.0
+scale = Vector2(0.6862369, 0.68280846)
+texture = ExtResource("1_enoba")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=223343234]
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=1434252593]
+offset_left = -3.0
+offset_top = 573.0
+offset_right = 1159.0
+offset_bottom = 642.0
+color = Color(0.5726487, 0.28531793, 5.7756904e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1780629992]
+position = Vector2(574, 606.5)
+shape = SubResource("RectangleShape2D_673qo")
