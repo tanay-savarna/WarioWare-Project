@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c618iyn3a3c35"]
+
+[ext_resource type="Texture2D" uid="uid://byeo2bp0oouwl" path="res://images/cool.png" id="1_psbsm"]
+[ext_resource type="Texture2D" uid="uid://bgy4eo6odfu5u" path="res://images/wood.png" id="2_he4ew"]
+
+[node name="minigame_2" type="Node2D" unique_id=2025854570]
+
+[node name="Background" type="TextureRect" parent="." unique_id=65854708]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_psbsm")
+
+[node name="Button_1" type="TextureButton" parent="." unique_id=1134281890]
+offset_left = 123.00001
+offset_top = 65.0
+offset_right = 283.0
+offset_bottom = 276.0
+scale = Vector2(1.4250723, 1.2320985)
+texture_normal = ExtResource("2_he4ew")
